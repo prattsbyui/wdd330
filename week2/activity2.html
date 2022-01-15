@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Team 1 - Week 2</title>
+    <style>
+    html { font-size: 4vh; }
+
+body {
+  color: #ffe9c0;
+  background: #3d6892;
+  text-align: center;
+  
+}
+
+main {
+  background: black;
+  padding: 10px;
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+
+section {
+  background: grey;
+  text-align: center;
+  padding: 2%;
+}
+
+button {
+  background: #454c83;
+  color: #ffe9c0;
+  border-radius: 10px;
+  padding: 2vw;
+}
+
+input {
+  background: rgb(195, 240, 255);
+  color: rgb(99, 98, 98);
+  height: 12vh;
+  font-size: 2vw;
+  width: 25vw;
+  text-align: center;
+}
+
+div {
+  padding: 2%;
+}
+
+.col1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 6vw;
+}
+
+.col2 { 
+  grid-template-columns: 1fr 1fr;
+}
+
+.col4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.centered { 
+  text-align: center; 
+  width: 90%;
+  margin: auto;
+}
+</style>
+  </head>
+  <body>
+    
+    <h1> W02 Team Activity</h1>
+  <main>
+
+    <h2>Core 1</h2>
+      <h3>Simon Says!</h3>
+        <ol>
+          <li>Add a text input and a button. Put an empty div with an ID below those.</li>
+          <li>Add a script tag, write a function that will read the contents of the input, and write them to the div.</li>
+          <li>Call the function when the button is pressed.</li>
+        </ol>
+      <section class="col2">
+        <input class="input1" name="input1" id="input1" type="text" placeholder="Enter Some Text!">
+        <button onclick="writeOutput()">Click Me</button> 
+        <div id="output1">Change me by typing in the box and clicking the button.</div>   
+      </section>
+
+    <h2>Core 2</h2>
+      <h3>Super Summer!</h3>
+        <ol>        
+          <li>Write a new function that expects a number as an argument. It should take that number and sum all the numbers up to the number provided. (ie n=5…so it would do 1+2+3+4+5 = 15) <br> It should return that value.</li>
+          <li>When the button is pressed it should read the number from the input. Make sure it is a valid number, call the summing function you just wrote, and output the result to the div.</li>
+        </ol>
+      <section class="col2">
+        <label for="input2">Enter A Number
+          <input class="input2" name="input2" id="input2" type="number" placeholder="0"> 
+        </label>
+        <button onclick="sumUp()">Click Me</button>
+        <div id="output2">Check the sum of all the numbers between 0 and the number you enter!</div>
+      </section>
+
+    <h2>Core 3</h2>
+      <h3>Adding Machine</h3>
+        <ol>
+          <li>Add an additional input to your HTML file.</li>
+          <li>Add a + button.</li>
+          <li>Write a function that will take the numbers from each input, add them together, and output the result to a div</li>
+        </ol>
+      <section>Enter Two Numbers to Add
+        <div class="col4">
+          <p class="centered">
+            <input class="input3 col1" name="input3" id="input3" type="number" placeholder="0"></p>
+          <p class="centered">+</p>
+          <p class="centered">
+            <input class="input4 col1" name="input4" id="input4" type="number" placeholder="0"></p>
+        <button onclick="addUp()">=</button>          
+        </div>
+        <div id="output3">Answer will appear here.</div>
+      </section>
+
+  <script>
+      // core 1 js
+      function writeOutput() { // Core 1
+        document.getElementById("output1").innerHTML = 'You Entered: ' + document.getElementById("input1").value;
+      }
+      // core 2 js
+      function sumUp() {
+        var input = parseFloat(document.getElementById('input2').value);
+        var sum = 0;
+        for (i = 1; i <= input; i++) {
+          sum += i;
+        }
+        document.getElementById("output2").innerHTML = 'The result is: ' + sum;
+      }
+      // core 3 (Benjamin Herendeen)
+      function addUp() {
+        let numOne = parseFloat(document.getElementById('input3').value); // accept integers and decimals
+        let numTwo = parseFloat(document.getElementById('input4').value); // accept integers and decimals
+
+        document.getElementById('output3').innerHTML = `${numOne} + ${numTwo} = ${numOne + numTwo}`;
+      }
+  </script>
+  </body>
+  
+</html>
