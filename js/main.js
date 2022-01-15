@@ -2,6 +2,10 @@ const links = [
     {
       label: "Week1 Exercises",
       url: "week1/index.html"
+    },
+    {
+      label: "Week2 Exercises",
+      url: "week1/index.html"
     }
   ]
 
