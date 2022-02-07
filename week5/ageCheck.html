@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Am I Old Enough</title>
+<script>
+function amIOldEnough(){
+	var age = parseFloat(document.getElementById('age').value);
+    if (age < 12) {    
+        message = 'No, sorry.' + age + ' is too young.';
+    } else if (age < 18) {
+        message = 'Only if you are accompanied by an adult.';
+    }
+    else {
+        message = 'Yep, come on in!';
+    }
+    document.getElementById('message').innerHTML = message;
+}
+</script>
+</head>
+
+<body>
+<h2> Enter your age to check if you are old enough!</h2> 
+<p>Check your age:
+<input type="number" id="age" size="8">
+
+<button type="button" onclick="amIOldEnough()">check</button></p>
+<div id="message"></div>
+</body>
+</html>
