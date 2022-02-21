@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Start End Divisor</title>
+<script>
+/* Input:
+ * Processing:
+ * Output:
+ */
+function divisor() {
+var start = parseFloat(document.getElementById('start').value);
+var end = parseFloat(document.getElementById('end').value);
+var divisor = parseFloat(document.getElementById('divisor').value);
+var output = "";
+
+for (var i = start; i <= end; i++){
+	if ((i % divisor) == 0){
+output += i + " ";
+	}
+}
+document.getElementById("output").innerHTML = output;
+
+}
+</script>
+</head>
+
+<body>
+<h1>Find Divisor</h1>
+<p>Enter a start number, a bigger end number, and a divisor. 
+Push the button to show all numbers divisable by your divsor 
+between your start and end number.</p>
+Start: <input type="text" id="start" size="5"><br>
+End: <input type="text" id="end" size="5"><br>
+Divisor: <input type="text" id="divisor" size="5"><br>
+<button type="button" onclick="divisor()">Click</button>
+<div id="output"></div>
+</body>
+</html>
