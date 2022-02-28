@@ -1,0 +1,55 @@
+body{
+    margin: 0 auto;
+  }
+  h1, p{
+    text-align:center;
+    margin: 0;
+  }
+  ul {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .line1, .line2, .line3 {
+    display: block;
+    width: 30px;
+    height: 5px;
+   
+    background-color: green;
+    margin: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .open .line1 {
+      position: absolute;
+  transform: rotate(-45deg) translate(-5px, 5px);
+    left: 12%;
+    transition: all 0.8s ease;
+  }
+  
+  .open .line2 {
+    position: absolute;
+  transform: rotate(45deg) translate(5px, 5px);
+    left: 12%;
+    transition: all 0.8s ease;
+  }
+  
+  .open .line3 {
+  display: none;
+  }
+  
+  .sidebar{
+    background-color: black;
+    color: white;
+    width: 15%;
+    height: 100%;
+    position:absolute;
+    left: -25%;
+    transition: all .8s ease;
+  }
+  
+  .open .sidebar {
+    left: 0;
+    transition: all 0s ease-in;
+  }
+  
