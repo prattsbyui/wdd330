@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="../week11/todo.css">
+    
+  </head>
+  <body>
+    <h1>WDD 330 Challenge 1</h1>
+    <h2>To Do List</h2>
+
+
+<h3>Tasks</h3>
+    <ul class="display"></ul>
+    
+<p style="font-size: small" id="message"></p>
+<button type="button" onclick="getCount(list)">All</button>
+<button type="button" onclick="getActive(list)">Active</button> 
+<button type="button" onclick="getCompleted(list)">Completed</button>
+
+<form class="form">
+<input type="text" class="add">
+<button type="submit">Add Task</button> 
+</form>
+<h3>Team Members</h3>
+    <ul class="display-team"></ul>
+    
+<form class="form-team">
+<input type="text" class="add-team">
+<button type="submit" id="addtoteam">Add Task</button> 
+</form>
+
+<h3>assignments</h3>
+
+    <ul class="display-assign"></ul>
+    
+<form class="form-assign">
+
+<label for="team">Choose Team Member:</label>
+<select name="teamDrop" id="teamDrop">
+</select>
+<br>
+<label for="task">Choose a task:</label>
+<select name="taskDrop" id="taskDrop">
+</select>
+<br>
+<button type="submit">Assign task</button> 
+</form>
+<script src="../week11/todo.js"></script>
+  </body>
+</html>

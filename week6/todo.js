@@ -2,6 +2,7 @@ const display = document.querySelector('.display');
 const addt = document.querySelector('.add');
 const form = document.querySelector('.form');
 
+
 var list = [];
 
 form.addEventListener('submit', function(event){
@@ -109,4 +110,8 @@ function getCompleted(list){
         message.innerHTML =  `0 completed`;
           }
     });
+ }
+
+ function assignTask(){
+     
  }
