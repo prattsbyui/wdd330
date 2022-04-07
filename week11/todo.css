@@ -15,9 +15,15 @@ body {
   }
   li {
       margin: 0 auto;
-      max-width: 25%;
+      max-width: 100%;
   
   }
   #remove {
       margin-left: 50px;
   }
+  #remove-member {
+    margin-left: 50px;
+}
+#remove-assign {
+  margin-left: 50px;
+}

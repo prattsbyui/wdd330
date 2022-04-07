@@ -14,12 +14,6 @@
 
 <h3>Tasks</h3>
     <ul class="display"></ul>
-    
-<p style="font-size: small" id="message"></p>
-<button type="button" onclick="getCount(list)">All</button>
-<button type="button" onclick="getActive(list)">Active</button> 
-<button type="button" onclick="getCompleted(list)">Completed</button>
-
 <form class="form">
 <input type="text" class="add">
 <button type="submit">Add Task</button> 
@@ -32,18 +26,23 @@
 <button type="submit" id="addtoteam">Add Task</button> 
 </form>
 
-<h3>assignments</h3>
+<h3>Assignments</h3>
 
     <ul class="display-assign"></ul>
-    
+
+    <p style="font-size: small" id="message"></p>
+    <button type="button" onclick="getCount(assign)">All</button>
+    <button type="button" onclick="getActive(assign)">Active</button> 
+    <button type="button" onclick="getCompleted(assign)">Completed</button>  
 <form class="form-assign">
 
-<label for="team">Choose Team Member:</label>
+<label for="teamDrop">Choose Team Member:</label>
 <select name="teamDrop" id="teamDrop">
+  
 </select>
 
 <br>
-<label for="task">Choose a task:</label>
+<label for="taskDrop">Choose a Task:</label>
 <select name="taskDrop" id="taskDrop">
 </select>
 <br>
