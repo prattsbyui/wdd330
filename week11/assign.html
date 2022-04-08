@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
-    <link rel="stylesheet" href="../week11/todo.css">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="../week11/assign.css">
     
   </head>
   <body>
-    <h1>WDD 330 Challenge 1</h1>
-    <h2>To Do List</h2>
+    <h1>WDD 330 Challenge 2</h1>
+    <h2>Let Assign Some Tasks</h2>
 
 
 <h3>Tasks</h3>
@@ -23,7 +23,7 @@
     
 <form class="form-team">
 <input type="text" class="add-team">
-<button type="submit" id="addtoteam">Add Task</button> 
+<button type="submit" id="addtoteam">Add Team Member</button> 
 </form>
 
 <h3>Assignments</h3>
@@ -33,21 +33,26 @@
     <p style="font-size: small" id="message"></p>
     <button type="button" onclick="getCount(assign)">All</button>
     <button type="button" onclick="getActive(assign)">Active</button> 
-    <button type="button" onclick="getCompleted(assign)">Completed</button>  
+    <button type="button" onclick="getCompleted(assign)">Completed</button> 
+
+<h3>Create Assignments</h3>  
+<h4>Please select both a team member and a task,<br> then click 'Assign Task' to assign a team member a task.</h4>   
 <form class="form-assign">
 
 <label for="teamDrop">Choose Team Member:</label>
-<select name="teamDrop" id="teamDrop">
-  
+<select name="teamDrop" id="teamDrop"> 
 </select>
 
 <br>
+
 <label for="taskDrop">Choose a Task:</label>
 <select name="taskDrop" id="taskDrop">
 </select>
+
 <br>
+
 <button type="submit">Assign task</button> 
 </form>
-<script src="../week11/todo.js"></script>
+<script src="../week11/assign.js"></script>
   </body>
 </html>

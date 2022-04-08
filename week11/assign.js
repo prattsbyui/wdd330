@@ -132,7 +132,7 @@ getLocal();
  getLocalTeam();
 
  function displayTeamDrop(team){
-     teamDrop.innerHTML = '<option value=""></option>';
+     teamDrop.innerHTML = '<option value="">Select Member</option>';
 
      team.forEach(function(member){
          const option = document.createElement('option');
@@ -146,7 +146,7 @@ getLocal();
  
 
  function displayTaskDrop(list){
-    taskDrop.innerHTML = '<option value="">Select Name</option>';
+    taskDrop.innerHTML = '<option value="">Select Task</option>';
 
     list.forEach(function(item){
         const option = document.createElement('option');
