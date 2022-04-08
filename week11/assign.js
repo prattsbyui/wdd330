@@ -130,6 +130,7 @@ getLocal();
      }
  })
  getLocalTeam();
+ 
 
  function displayTeamDrop(team){
      teamDrop.innerHTML = '<option value="">Select Member</option>';
