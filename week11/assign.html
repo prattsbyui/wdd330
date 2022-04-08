@@ -9,34 +9,13 @@
   </head>
   <body>
     <h1>WDD 330 Challenge 2</h1>
+
+    <main>
     <h2>Lets Assign Some Tasks</h2>
-
-
-<h3>Tasks</h3>
-    <ul class="display"></ul>
-<form class="form">
-<input type="text" class="add">
-<button type="submit">Add Task</button> 
-</form>
-<h3>Team Members</h3>
-    <ul class="display-team"></ul>
-    
-<form class="form-team">
-<input type="text" class="add-team">
-<button type="submit" id="addtoteam">Add Team Member</button> 
-</form>
-
-<h3>Assignments</h3>
-
-    <ul class="display-assign"></ul>
-
-    <p style="font-size: small" id="message"></p>
-    <button type="button" onclick="getCount(assign)">All</button>
-    <button type="button" onclick="getActive(assign)">Active</button> 
-    <button type="button" onclick="getCompleted(assign)">Completed</button> 
-
 <h3>Create Assignments</h3>  
-<h4>Please select both a team member and a task,<br> then click 'Assign Task' to assign a team member a task.</h4>   
+<h4>Please select both a team member and a task,
+  <br> then click 'Assign Task' to assign a team member a task.
+  <br> If there are no tasks or members, please add them below.</h4>   
 <form class="form-assign">
 
 <label for="teamDrop">Choose Team Member:</label>
@@ -53,6 +32,39 @@
 
 <button type="submit">Assign task</button> 
 </form>
+<div>
+<h3>Assignments</h3>
+
+    <ul class="display-assign"></ul>
+
+    <p style="font-size: small" id="message"></p>
+    <button type="button" onclick="getCount(assign)">All</button>
+    <button type="button" onclick="getActive(assign)">Active</button> 
+    <button type="button" onclick="getCompleted(assign)">Completed</button> 
+</div>
+<div>
+<h3>Tasks</h3>
+    <ul class="display"></ul>
+<form class="form">
+<input type="text" class="add">
+<button type="submit">Add Task</button> 
+</form>
+</div>
+
+<div>
+<h3>Team Members</h3>
+    <ul class="display-team"></ul>
+    
+<form class="form-team">
+<input type="text" class="add-team">
+<button type="submit" id="addtoteam">Add Team Member</button> 
+</form>
+</div>
+
+
+
+
+</main>
 <script src="../week11/assign.js"></script>
   </body>
 </html>
